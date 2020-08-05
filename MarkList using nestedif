@@ -1,0 +1,29 @@
+Given the names and grades for each student in a class of students, store them in a nested list
+and print the name(s) of any student(s) having the second lowest grade.
+
+Sample Input 0                   Sample Output 0
+5                                     Berry
+Harry                                 Harry
+37.21
+Berry
+37.21
+Tina
+37.2
+Akriti
+41
+Harsh
+39
+
+a=int(input())
+marksheet=[]
+scoresheet=[]
+for i in range(a):
+    name=input()
+    score=float(input())
+    marksheet+=[[name,score]]
+    scoresheet+=[score]
+x=sorted(scoresheet)[1]
+for n,s in sorted(marksheet):
+    if s==x:
+        print(n)
+
