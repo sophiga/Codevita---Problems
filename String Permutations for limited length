@@ -1,0 +1,24 @@
+Your task is to print all possible permutations of size of the string in lexicographic sorted order.
+Sample Input
+HACK 2
+Sample Output
+AC
+AH
+AK
+CA
+CH
+CK
+HA
+HC
+HK
+KA
+KC
+KH
+
+from itertools import permutations
+a,b=input().split()
+c=int(b)
+d=permutations(sorted(a),c)
+for i in d:
+    print("".join(i))
+    
