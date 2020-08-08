@@ -1,0 +1,11 @@
+a=list(input())
+b=list(input())
+for i in a:
+    if i in b:
+        a.remove(i)
+        b.remove(i)
+print(len(a)+len(b))
+
+Input:                 Output:
+abc                       6
+amnop
